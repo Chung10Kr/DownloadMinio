@@ -1,0 +1,29 @@
+{
+  "name": "DownloadMinio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "pkg ."
+  },
+  
+  "bin": {
+    "app": "./app.js"
+  },
+  "pkg": {
+    "targets": [
+      "node12-win-x64"
+    ],
+    "scripts": "./app.js",
+    "outputPath": "dist"
+  },
+  "author": "crlee05",
+  "license": "ISC",
+  "dependencies": {
+    "minio": "^7.0.33"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.8"
+  }
+}
